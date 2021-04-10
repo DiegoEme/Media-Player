@@ -1,6 +1,7 @@
 
 function MediaPlayer(config) {
     this.media = config.el;
+    this.plugins = config.plugins || [];
   }
   
   MediaPlayer.prototype.play = function () {
