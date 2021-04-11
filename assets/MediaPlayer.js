@@ -12,4 +12,9 @@ function MediaPlayer(config) {
     this.media.pause();
   };
 
+  MediaPlayer.prototype.toggleMute = function () {
+    this.media.volume = !this.media.volume;
+  };
+
+  
   export default MediaPlayer;
